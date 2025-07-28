@@ -1,0 +1,58 @@
+/* GradientText.css */
+
+/*
+   This class is a container for the gradient text.
+   It's where you might put sizing or layout properties
+   if they are not handled by Tailwind.
+*/
+.animated-gradient-text {
+    /* No specific styles needed here that can't be handled by Tailwind */
+    /* Keeping it to allow for the original component's structure reference */
+  }
+  
+  .animated-gradient-text .text-content {
+    /* Define default font styles */
+    padding-bottom: 10px;
+   
+    font-size: 4rem; /* Example: adjust as needed */
+    font-weight: bold;
+    line-height: 1; /* Example: adjust as needed */
+  
+    /*
+      THESE ARE THE CRUCIAL PROPERTIES FOR MAKING THE TEXT ITSELF A GRADIENT.
+      Tailwind does not have direct utility classes for these.
+    */
+    background-clip: text;
+    -webkit-background-clip: text; /* For Webkit browsers like Chrome, Safari */
+    color: transparent; /* Makes the text transparent, revealing the background */
+  
+    /* The background image (the gradient) is animated. */
+    /* The `background-image` and `animation-duration` will come from inline style */
+    animation: gradient-animation linear infinite;
+  
+    position: relative; /* Ensure it respects z-index if overlay is used */
+    z-index: 2; /* Ensure text is above the optional border/overlay */
+  }
+  
+  /* Define the keyframes for the gradient animation */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Styles for the optional gradient border/overlay */
+  .animated-gradient-text .gradient-overlay {
+    /* Tailwind handles absolute positioning, inset, and z-index */
+    /* position: absolute; */
+    /* inset: 0; */
+    /* z-index: 1; */
+    
+    background-clip: border-box; /* Or content-box, padding-box, depending on desired effect */
+  }
