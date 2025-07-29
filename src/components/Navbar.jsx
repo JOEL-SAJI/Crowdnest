@@ -24,8 +24,8 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/register" className="text-white hover:text-gray-300 transition duration-300">
-              Register
+            <a href="/host" className="text-white hover:text-gray-300 transition duration-300">
+              Host
             </a>
           </li>
         </ul>
