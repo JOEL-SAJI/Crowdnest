@@ -9,8 +9,8 @@ export default function FadingGradientText({
     "Scalable.",
   ], // A list of texts to cycle through
   colors = ["#363478", "#683089", "#BE3E2F", "#F4811A", "#FDC005"],
-  animationSpeed = 8, // Speed for the gradient's background animation
-  fadeDuration = 400, // Duration of the fade-in/out transition in milliseconds
+  animationSpeed = 5, // Speed for the gradient's background animation
+  fadeDuration = 100, // Duration of the fade-in/out transition in milliseconds
   interval = 1000, // How long each text stays visible before fading out (in milliseconds)
   showBorder = false,
   className = "",

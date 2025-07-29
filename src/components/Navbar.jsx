@@ -7,7 +7,7 @@ const Navbar = () => {
         <a href="/" className="text-white text-2xl font-bold">
          <h1 className='font-poppins ml-8'>Crowdnest</h1>
         </a>
-        <ul className="flex space-x-10 pr-120">
+        <ul className="flex space-x-10 pr-150">
           <li>
             <a href="/events" className="text-white hover:text-gray-300 transition duration-300">
               Events

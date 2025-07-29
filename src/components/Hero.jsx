@@ -1,6 +1,8 @@
 import React from 'react'
 import TextFader from './Textfader'
 import SplitText from "./SplitText";
+import Button1 from './button1';
+
 
 
 const handleAnimationComplete = () => {
@@ -38,6 +40,9 @@ const Hero = () => {
       <div className='text-white text-2xl text-center'>
         <h3 className=' font-poppins pt-6 text-gray-400 text-base'>Crowdnest’s all-in-one event management software simplifies event planning </h3>
         <h3 className=' font-poppins text-gray-400 text-base'>and elevates the attendee experience.</h3>
+      </div>
+      <div className='flex justify-center items-center mt-20'>
+        <Button1 />
       </div>
     </div>
   )
