@@ -2,6 +2,8 @@ import React from 'react'
 import TextFader from './Textfader'
 import SplitText from "./SplitText";
 import Button1 from './button1';
+import CircularGallery from './Gallery'
+
 
 
 
@@ -41,11 +43,15 @@ const Hero = () => {
         <h3 className=' font-poppins pt-6 text-gray-400 text-base'>Crowdnest’s all-in-one event management software simplifies event planning </h3>
         <h3 className=' font-poppins text-gray-400 text-base'>and elevates the attendee experience.</h3>
       </div>
-      <div className='flex justify-center items-center mt-20'>
-        <Button1 />
+      <div className=' flex justify-center items-center mt-20'>
+        <a href="/host"><Button1 /></a>
       </div>
+      
     </div>
   )
 }
 
 export default Hero
+
+
+  
